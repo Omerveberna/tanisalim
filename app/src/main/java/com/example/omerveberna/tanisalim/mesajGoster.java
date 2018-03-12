@@ -30,6 +30,11 @@ public class mesajGoster extends AppCompatActivity {
 
         startActivity(aramaIntent);
     }
+    public  void gelecegiYazanlaraGit(View view){
+        Uri webpage = Uri.parse("https://gelecegiyazanlar.turkcell.com.tr/");
+        Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+        startActivity(webIntent);
+    }
 
     }
 

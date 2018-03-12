@@ -22,4 +22,11 @@
         android:layout_height="wrap_content"
         android:onClick="goruselim"
         android:text="Görüşelim!" />
+
+    <Button
+        android:id="@+id/btGelecegiYazanlar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="gelecegiYazanlaraGit"
+        android:text="Geleceği Yazanlar" />
 </LinearLayout>
