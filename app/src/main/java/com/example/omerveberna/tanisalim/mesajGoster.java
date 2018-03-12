@@ -1,8 +1,10 @@
 package com.example.omerveberna.tanisalim;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -20,6 +22,14 @@ public class mesajGoster extends AppCompatActivity {
 
         tvIsim=(TextView) findViewById(R.id.tvIsim);
         tvIsim.setText("Merhaba "+isim+", tanıştığıma memnun oldum!");
+    }
+
+    public  void goruselim(View view){
+        Uri number = Uri.parse("tel:05396200711");
+        Intent aramaIntent = new Intent(Intent.ACTION_DIAL, number);
+
+        startActivity(aramaIntent);
+    }
 
     }
-}
+
